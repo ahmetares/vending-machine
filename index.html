@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vending Machine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Vending Machine</h1>
+
+       <form style="margin-bottom: 10px;">
+           <span style="margin-right: 5px;">Ones</span>
+           <input type='text' name='Ones' id='Ones' placeholder='0' value='0' oninput="updatingMoney()" />
+           <br>
+           <span style="margin-right: 5px;">Fives</span>
+           <input type='text' name='Fives' id='Fives' placeholder='0' value='0' oninput="updatingMoney()"/>
+           <br>
+           <span style="margin-right: 5px;">Nickels</span>
+           <input type='text' name='Nickels' id='Nickels' placeholder='0' value='0' oninput="updatingMoney()"/>
+           <br>
+           <span style="margin-right: 5px;">Dimes</span>
+           <input type='text' name='Dimes' id='Dimes' placeholder='0' value='0' oninput="updatingMoney()"/>
+           <br>
+           <span style="margin-right: 5px;">Quarters</span>
+           <input type='text' name='Quarters' id='Quarters' placeholder='0' value='0' oninput="updatingMoney()"/>
+           <br>
+       </form>
+
+       <button value='Coke ' id='coke' onclick='buySoda(0)'>Coke</button>
+       <button value='Moxie ' id='moxie' onclick='buySoda(1)'>Moxie</button>
+       <button value='Fresca ' id='Fresca' onclick='buySoda(2)'>Fresca</button>
+       <button  value='Sprite' id='tab' onclick='buySoda(3)' style='margin-bottom: 10px';>Sprite</button>
+       <br>
+       <button value='Cancel' id='cancel' onclick='cancel()'>Cancel</button>
+
+
+       <h2> Total Entered: $ <span id="paid">0.00</span></h2>
+       <h2 id="info"> Insert money first. Select a soda</h2>
+
+       <h2 id="change"></h2>
+
+       <script src="index.js"></script>
+
+
+
+
+</body>
+</html>
